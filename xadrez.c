@@ -17,6 +17,36 @@ int main() {
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
+ char pecas[] = {'torre', 'bispo', 'rainha'};
+    int i;
+
+    // Mostrar movimentos da torre 5 casas para a direita
+    printf("torre :\n");
+    for (i = 0; i < 5; i++)
+    {
+        printf("Direita\n"); // impreme a direção do movimento
+    }
+
+    // Mostrar movimentos do bispo 5 casas na diagonal superior direita
+    printf("bispo :\n");
+    i = 0;
+    while (i < 5)
+    {
+        printf("Cima, direita\n"); // imprime a direção do movimento
+        i++;
+    }
+    
+    // Mostrar movimentos da rainha 8 casas para a esquerda
+    printf("rainha :\n");
+    i = 0;
+    do
+    {
+        printf("Esquerda\n"); // imprime a direção do movimento
+        i++;
+    } while (i < 8);
+       
+    
+
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
